@@ -46,7 +46,19 @@ h4 {color: green;}
         </div>
     </ol>
 
-</body>
+<button onclick="zmienKolor()">Zmień kolor</button>
+
+<script>
+function zmienKolor() {
+    if (document.body.style.backgroundColor === "black") {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    } else {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+}
+</script>
 </html>
 
 
